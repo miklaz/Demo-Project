@@ -24,31 +24,21 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vln-DV-TZF">
-                                            <rect key="frame" x="20" y="16" width="72" height="72"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="72" id="TQp-Ue-L0M"/>
-                                                <constraint firstAttribute="width" constant="72" id="fRB-NQ-KkC"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgg-yC-3Hb">
-                                            <rect key="frame" x="108" y="41.5" width="196" height="21"/>
+                                            <rect key="frame" x="16" y="16" width="288" height="73"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="vln-DV-TZF" secondAttribute="bottom" priority="999" constant="16" id="Lnl-jH-Xc9"/>
+                                        <constraint firstItem="Xgg-yC-3Hb" firstAttribute="top" secondItem="jiq-Bd-z3f" secondAttribute="top" constant="16" id="58T-7M-Bb8"/>
+                                        <constraint firstItem="Xgg-yC-3Hb" firstAttribute="leading" secondItem="jiq-Bd-z3f" secondAttribute="leading" constant="16" id="IUs-CQ-dLg"/>
                                         <constraint firstAttribute="trailing" secondItem="Xgg-yC-3Hb" secondAttribute="trailing" constant="16" id="aZp-Ih-Zsh"/>
-                                        <constraint firstItem="vln-DV-TZF" firstAttribute="leading" secondItem="jiq-Bd-z3f" secondAttribute="leading" constant="20" id="ngq-8t-mwe"/>
-                                        <constraint firstItem="Xgg-yC-3Hb" firstAttribute="centerY" secondItem="vln-DV-TZF" secondAttribute="centerY" id="qL5-kK-K55"/>
-                                        <constraint firstItem="Xgg-yC-3Hb" firstAttribute="leading" secondItem="vln-DV-TZF" secondAttribute="trailing" constant="16" id="yft-cg-rII"/>
-                                        <constraint firstItem="vln-DV-TZF" firstAttribute="top" secondItem="jiq-Bd-z3f" secondAttribute="top" constant="16" id="yh6-tf-yfr"/>
+                                        <constraint firstAttribute="bottom" secondItem="Xgg-yC-3Hb" secondAttribute="bottom" constant="16" id="nMy-cg-Eq7"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="cityImageView" destination="vln-DV-TZF" id="DM4-cZ-2db"/>
                                     <outlet property="cityNameLabel" destination="Xgg-yC-3Hb" id="3jH-0C-8zL"/>
                                 </connections>
                             </tableViewCell>

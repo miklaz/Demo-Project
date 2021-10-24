@@ -83,7 +83,7 @@ class FavoriteCitiesTableVC: UITableViewController {
     //кнопка для добавления городов
     @IBAction func addCityButton(_ sender: Any) {
         //подготовка и показ alert
-        let alertVc = UIAlertController(title: "Add new city", message: nil, preferredStyle: .alert)
+        let alertVc = UIAlertController(title: "Enter city name", message: nil, preferredStyle: .alert)
         alertVc.addTextField(configurationHandler: nil)
         let okAction = UIAlertAction(title: "Ok", style: .default) { [weak self] _ in
             guard let name = alertVc.textFields?[0].text else { return }

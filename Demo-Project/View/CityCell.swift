@@ -9,8 +9,6 @@ import UIKit
 
 class CityCell: UITableViewCell {
 
-    
-    @IBOutlet weak var cityImageView: UIImageView!
     @IBOutlet weak var cityNameLabel: UILabel!
     
     override func awakeFromNib() {
